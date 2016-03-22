@@ -1514,8 +1514,8 @@
 			{
 				this._stopSound(sound);
 				sound.loadState = LoadStates.unloaded;
+				SoundJS.removeSound(sound.src);
 			}
-			SoundJS.removeSound(sound.src);
 		}
 	};
 
